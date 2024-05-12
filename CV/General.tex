@@ -1,0 +1,309 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.6, 21 May 2021) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{files/altacv}
+
+%% AltaCV uses the fontawesome5 package.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{url}{HTML}{0645AD}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+%\input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+% \input{pubs-num}
+
+%% sample.bib contains your publications
+
+\begin{document}
+\name{IMAN BARZEGARI}
+\tagline{Graduate Student in Computer Engineering}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+%\photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{imanbarzegari95@gmail.com}
+  \location{Tehran, Iran}
+  \homepage{imiiii.github.io/}
+  \linkedin{imibarzegari}
+  \github{imiiii}
+  
+
+%   \orcid{0000-0000-0000-0000} % Obviously making thi\textit{\textit{}}s up too.
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+	%%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Education}
+\cvevent{M.S.\ in Computer Engineering - Computer Systems}{ \href{http://en.sbu.ac.ir/SitePages/Home.aspx}
+ 	{Shahid beheshti University}.}{Sep 2019 -- Ongoing}{}
+
+
+    \textbf{\textcolor{3}{Thesis:} Exploiting processing in memory for DNN Hardware Acceleration}: I designed and developed a framework for using in-memory processing technology for DNN hardware acceleration. The framework integrates the procedure required for converting DNN models to executable binaries through a Pass pipeline. This technology enables us to process memory-intensive layers of a DNNs on memory rather than GPU or CPU.
+    
+    \newline 
+\begin{itemize}    
+    \item \textbf{Winner} of national competition for \textbf{research grant} held among all Master's and PhD students. Only 30 projects won the award.
+    
+\end{itemize}
+\divider
+
+\cvevent{B.S.\ in Software Engineering}{ \href{https://www.bzte.ac.ir/en}{Buein Zahra Technical University}}{Sep 2014 -- Jan 2019}{}
+% \divider
+
+    \textbf{\textcolor{3}{Final Project:} Learning Management System}: I used the state-of-the-art technology (ASP core for the back-end, angular6 for the front-end, and SQL server to manage the database) to design a fast and simple single-page learning management system. It is composed of three main modules: exam design, grading, and course evaluation.
+
+
+\cvsection{Professional Experience}
+
+\cvevent{Research Assistant}{ \href{http://www.ipm.ac.ir/}{IPM (Institute For Research In Fundamental Sciences)}}{Oct 2020 -- Ongoing}{Tehran, Iran}
+\begin{itemize}
+\item  Experience working with DNN frameworks such as \href{https://pytorch.org/}{\textbf{PyTorch}} and \href{https://www.tensorflow.org/}{\textbf{TensorFlow}}.
+\item Familiar with various hardware accelerators such as \href{https://eyeriss.mit.edu/}{\textbf{Eyeriss}}, \textbf{Cambricon-x} and process in memory hardware models such as hybrid memory cubes. 
+\item Experience working with DNN compilers (\href{https://ai.facebook.com/tools/glow/}{\textbf{Glow}}, \href{https://onnc.ai/}{\textbf{ONNC}}, \href{https://mlir.llvm.org/}{\textbf{MLIR}}) for code generation on different instruction set architectures (ISA).
+\item  Work with intermediate representation of deep neural networks such as \href{https://onnc.ai/}{\textbf{ONNX}} and \href{https://caffe2.ai/}{\textbf{Caffe2}}.
+\end{itemize}
+
+\divider
+
+\cvevent{ Software Developer}{ \href{http://vidacomp.ir/}{Deep Thinkers Vida}}{Aug 2015 -- July 2020}{Tehran, Iran}
+\begin{itemize}
+
+\item \textbf{Worked on 10+ projects} at various sizes as a full-stack developer, using different frameworks and technologies in the backend and frontend. 
+
+\item Familiar with system design and architecture, software development life cycle, and agile project management. 
+
+\item \textbf{Managed} an \textbf{agile} team of 3 in a fully-tailored Claim Management web-application for an insurance company.
+
+\item Comprehensive \textbf{full-stack development} training of \textbf{two interns} during a summer internship program. The training covered frontend and back-end development using \textbf{MVC}, \textbf{EF} and \textbf{SQL}. EPie hired both interns as full-stack developers following the internship.
+\end{itemize}
+
+
+
+
+
+
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+
+\iffalse
+\cvsection{A Day of My Life}
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+\wheelchart{1.5cm}{0.5cm}{%
+  10/13em/accent!30/Sleeping \& dreaming about work,
+  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+  20/11em/accent!40/Spending time with family,
+  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
+  5/8em/accent!20/Baking cupcakes
+}
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the currentc column
+\newpage
+
+
+
+\nocite{*}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\fi
+\switchcolumn
+\cvsection{Teaching Assistant}
+\cvevent{Hardware Accelerator}{Shahid beheshti University }{Spring 2021}{Tehran, Iran}
+
+
+\cvevent{Test and Testability}{Shahid beheshti University }{Fall 2020}{Tehran, Iran}
+
+\cvsection{Awards and Honors}
+
+\cvachievement{\faTrophy}{Research Grant}{Winner of national competition for research grant held among all master's and PhD students (2020)}
+
+\divider
+    
+\cvachievement{\faUsers}{Ranked among top 2\% participants}{National university entrance exam for master's studies (2019)} 
+
+
+
+\cvsection{Skills}
+\cvtag{Python} \cvtag{C\#}\cvtag{TensorFlow} \cvtag{PyTorch}
+\cvtag{Machine Learning}  \cvtag{Deep Learning}
+
+\divider\smallskip
+
+\cvtag{Software/Hardware Co-Design} \cvtag{LLVM}
+\cvtag{Caffe2} \cvtag{MLIR}  \cvtag{Glow}\cvtag{ONNX} 
+
+ 
+
+\divider\smallskip
+
+ \cvtag{Debugging} \cvtag{Trello}
+\cvtag{Ducker Hub} 
+
+\cvtag{Source Control - Git} 
+
+\divider \smallskip
+
+\cvtag{Research} \cvtag{Problem Solving}
+\cvtag{Team Work}
+\cvtag{Time management} 
+\cvtag{Project Management}
+\divider\smallskip
+
+\cvtag{ASP Core} \cvtag{SQL} \cvtag{Entity Framework}
+\cvtag{AngularJS}  \cvtag{JavaScript} 
+
+\cvsection{Scores}
+
+\cvachievement{\faCertificate}{TOEFL Total Score: 94}{Reading: 25, Listening: 27,  Speaking: 21,  Writing: 21}
+
+
+\divider
+
+\cvachievement{\faLaptopCode}{Advanced C\# certificate}{Total Score: \textbf{100/100} (Nov 2015)}
+
+\divider
+
+\cvachievement{\faLaptopCode}{GRE Total Score: 298}{Quant: 159, Verbal:139  }
+
+
+\iffalse
+\cvsection{Referees}
+
+% \cvref{name}{email}{mailing address}
+\cvref{Dr. Dara Rahmati}{\href{http://en.sbu.ac.ir/SitePages/Home.aspx}{Faculty of Computer Science and Engineering Shahid Beheshti University}}{dara.rahmati@ipm.ir}
+
+
+\divider
+\cvref{Dr. Saeid Gorgin}{\href{https://irost.org/en/}{Iranian Research Organization for Science and Technology(IROST)}}{gorgin@ipm.ir}
+\fi
+    
+\newpage
+
+\iffalse
+\cvsection{References}
+
+% \cvref{name}{email}{mailing address}
+\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
+{Address Line 1\\Address line 2}
+
+\divider
+
+\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
+{Address Line 1\\Address line 2}
+\fi
+\end{paracol}
+
+\end{document}
